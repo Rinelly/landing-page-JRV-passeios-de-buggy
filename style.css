@@ -13,12 +13,12 @@ body {
 
 /* HERO */
 .hero {
-  height: 100vh;
+  height: 90vh;
   background: url("assets/hero.jpeg") center/cover no-repeat;
   position: relative;
-  background-position: center top;
+  background-position: center 70%;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 600px;
 }
 
 .hero-overlay {
@@ -31,6 +31,7 @@ body {
   color: #fff;
   align-items: flex-start;
   text-align: left;
+  padding-top: 120px;
 }
 
 .hero h1 {
@@ -274,7 +275,9 @@ section h2 {
 
   /* HERO */
   .hero {
-    height: 85vh;
+    height: 80vh;
+    min-height: 620px;
+    max-height: 820px;
   }
 
   .hero-overlay {
@@ -335,21 +338,19 @@ section h2 {
     margin-bottom: 48px;
   }
 
+  /* ROUTES - desktop layout corrigido */
   .route-card {
-    display: flex;
-    height: 280px;
+    display: block;
   }
 
-  .route-card img {
-    width: 40%;
-    height: 100%;
+  .route-gallery {
+    padding: 16px;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .route-content {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 100%;
+    padding: 24px;
   }
 
   .route-content h3 {
